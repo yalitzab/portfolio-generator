@@ -21,7 +21,6 @@ fs.writeFile('./index.html', generatePage(name, github), err => {
 
 
 
-
 // same as this
 // const name = profileDataArgs [0];
 // const github = profileDataArgs[1];
