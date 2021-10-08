@@ -1,5 +1,6 @@
 module.exports = templateData => {
-    console.log(templateData);
+    const { projects, about, ...header } = templateData;
+    // console.log(templateData);
 
     return `
     <!DOCTYPE html>
@@ -13,7 +14,7 @@ module.exports = templateData => {
     </head>
 
     <body>
-        <h1>${templateData}</h1>
+        <h1>${templateData.name}</h1>
         <h2><a href="https://github.com/${templateData.github}">Github</a></h2>
     </body>
     </html>
